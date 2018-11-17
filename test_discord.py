@@ -3,9 +3,6 @@ import youtube_dl
 from discord.ext import commands
 import asyncio
 
-
-token =  'NDU3NTgyNjc4NTYxMTI4NDQ4.DggLeQ.iK_bAhaoG6jVFIiD3NbMOuhcwH4'
-
 client = commands.Bot(command_prefix='.')
 client.remove_command('help')
 
@@ -74,4 +71,6 @@ async def resume(ctx):
     id = ctx.message.server.id
     players[id].resume()
 
-client.run(token)
+
+client.run(os.getenv('TOKEN'))
+
