@@ -74,7 +74,7 @@ def bot(*args,**kwargs):
         id = ctx.message.server.id
         players[id].resume()
 
-    client.run(os.ge.getenv('TOKEN'))
+    client.run(os.getenv('TOKEN'))
 
 if __name__ == "__main__":
     bot()
