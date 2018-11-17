@@ -5,7 +5,7 @@ import asyncio
 import os
 
 
-def bot():
+def bot(*args,**kwargs):
     client = commands.Bot(command_prefix='.')
     client.remove_command('help')
 
