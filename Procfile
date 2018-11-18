@@ -1,1 +1,1 @@
-worker : python test_discord.py
+worker: python test_discord.py
