@@ -75,6 +75,6 @@ def bot(*args,**kwargs):
 
     client.run(os.getenv('TOKEN'))
 
-if __name__ == "__main__":
-    print('Attempting to start up bot...')
-    bot()
+
+print('Attempting to start up bot...')
+bot()
